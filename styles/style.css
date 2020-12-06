@@ -1,3 +1,8 @@
+:root {
+    --rowNum: 16;
+    --colNum: 16;
+}
+
 html, body {
     margin: 0px;
     height: 100%;
@@ -8,6 +13,7 @@ html, body {
     background-color: black;
 }
 
+
 #title {
     text-align: center;
     padding: 18px 0px;
@@ -16,8 +22,23 @@ html, body {
     width: 100%;
 }
 
-.cell {
-    width: 1fr;
-    height: 1fr;
-    border: 2px solid black;
+#cell-container {
+    display: grid;
+    padding: 10px 10px;
+    background-color: antiquewhite;
+    height: 83%;
+    grid-template-columns: repeat(var(--colNum), 1fr);
+    grid-template-rows: repeat(var(--rowNum), 1fr);
+}
+
+.grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.grid-item2 {
+    padding: 1em;
+    border: 1px solid #ddd;
+    background-color: black;
 }
