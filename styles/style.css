@@ -40,3 +40,14 @@ html, body {
     border: 1px solid #ddd;
     background-color: black;
 }
+
+#resetbtn {
+    display: flex;
+    justify-content: center;
+}
+
+#reset {
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 5px;
+}
