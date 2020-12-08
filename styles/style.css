@@ -32,13 +32,11 @@ html, body {
 }
 
 .grid-item {
-    padding: 1em;
     border: 1px solid #ddd;
     background-color: white;
 }
 
 .grid-item2 {
-    padding: 1em;
     border: 1px solid #ddd;
     background-color: black;
 }

@@ -51,12 +51,10 @@ else {
     makeGrid(16, 16);
 }
 
-x = 1;
+let gClass = document.getElementsByClassName('grid-item');
 
-for (i = 1; i <= (numOfCells * numOfCells); i++) {
-    let gridItem = document.getElementsById('grid-item');
-    gridItem.addEventListener('moveover', function(e) {
-        gridItem.style.backgroundColor = 'black';
-        x++
+for (let i = 0; i < gClass.length; i++) {
+    gClass[i].addEventListener('mouseover', function(e) {
+        this.classList.replace('grid-item', 'grid-item2')
     })
 }
